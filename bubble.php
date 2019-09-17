@@ -1,0 +1,19 @@
+<?php
+$a=array(1,2,3,4,5,6,7,8,9,10);
+for($i=0;$i<count($a);$i++)
+{
+    for($j=0;$j<count($a);$j++)
+    {
+        if($j+1!=count($a))
+        {
+        if($a[$j]<$a[$j+1])
+        {
+            $swap=$a[$j];
+            $a[$j]=$a[$j+1];
+            $a[$j+1]=$swap;
+        }
+        }
+    }
+}
+print_r($a);
+?>
